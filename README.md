@@ -13,12 +13,15 @@ Calculation of Sensitivity and Specificity for Enhancer-based images
 
 ### [getImages_UG3_Samik.m](https://github.com/MitraLab-Organization/Sensitivity-and-Specificity-Calculation/blob/main/getImages_UG3_Samik.m)
     - Conversion of Bio-format images to separate channels
+    - Optional; if you have not downloaded the channel-wise images as stated above
 
 
 ### [ug3_enhcSpecTest_Samik_New.m](https://github.com/MitraLab-Organization/Sensitivity-and-Specificity-Calculation/blob/main/ug3_enhcSpecTest_Samik_New.m)
-    - Detection of Cells marked across each Channel by Mophological techniques
+    - Detection of Cells marked across each Channel by Morphological techniques
+    - Input Folder: OPR4_img containing the channel-wise images downloaded above (or generated above)
+    - Ouput Folder: OPR4 containing Cell-cemeters of detected cells and detection overlayed on the image channel
     
 
 
 ### [calc_spec_sens_Samik.m](https://github.com/MitraLab-Organization/Sensitivity-and-Specificity-Calculation/blob/main/calc_spec_sens_Samik.m)
-    - Calculation Specificity and Sensititvity according to detetced cells
+    - Calculation Specificity and Sensitivity according to detected cells
