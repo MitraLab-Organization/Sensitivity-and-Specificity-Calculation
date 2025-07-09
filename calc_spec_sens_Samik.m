@@ -75,17 +75,17 @@ for fN = 1 : length(direc)
     sns(fN) = numTP(fN) / numMarker(fN);
     spec(fN) = (numDapi(fN) - numMarker(fN) - numEnhc(fN) + numTP(fN)) ...
         / (numDapi(fN) - numMarker(fN));
-    prec(fN) = numTP(fN) / numEnhc(fN);
+    % prec(fN) = numTP(fN) / numEnhc(fN);
 end
 
 %% Sensitivity & Specificity
 
 
 
-sensitivity = sum(numTP) / sum(numMarker);
-specificity = (sum(numDapi) - sum(numMarker) - sum(numEnhc) + sum(numTP)) ...
-    / (sum(numDapi) - sum(numMarker));
-precision = sum(numTP) / sum(numEnhc);
+% sensitivity = sum(numTP) / sum(numMarker);
+% specificity = (sum(numDapi) - sum(numMarker) - sum(numEnhc) + sum(numTP)) ...
+%     / (sum(numDapi) - sum(numMarker));
+% precision = sum(numTP) / sum(numEnhc);
 
 %% CROP Extra
 % data = bfopen(fullfile(fpath, fileName));
