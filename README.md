@@ -24,4 +24,9 @@ Calculation of Sensitivity and Specificity for Enhancer-based images
 
 
 ### [calc_spec_sens_Samik.m](https://github.com/MitraLab-Organization/Sensitivity-and-Specificity-Calculation/blob/main/calc_spec_sens_Samik.m)
+    - Prerequisite: Run ug3_enhcSpecTest_Samik_New.m to get Detection CSVs
     - Calculation Specificity and Sensitivity according to detected cells
+    - Lines 6-20: perfov: Enhancer-Marker combination (only one should be uncommented)
+    - Line 35: Uncomment for single enhancer (Comment Line 36)
+    - Line 36: Uncomment for double enhancer
+    - Output: Array sens[] for all samples for sensitivity, Array spec[] for all samples for specificity
