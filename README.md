@@ -15,13 +15,15 @@ Calculation of Sensitivity and Specificity for Enhancer-based images
     - Conversion of Bio-format images to separate channels
     - Optional; if you have not downloaded the channel-wise images as stated above
 
-
 ### [ug3_enhcSpecTest_Samik_New.m](https://github.com/MitraLab-Organization/Sensitivity-and-Specificity-Calculation/blob/main/ug3_enhcSpecTest_Samik_New.m)
     - Detection of Cells marked across each Channel by Morphological techniques
     - Input Folder: OPR4_img containing the channel-wise images downloaded above (or generated above)
     - Ouput Folder: OPR4 containing Cell-cemeters of detected cells and detection overlayed on the image channel
-    
-
+    - Lines 6-20: perfov: Enhancer-Marker combination (only one should be uncommented)
+    - Lines 46-123: Detect cells marked by enhancer1 in case of double enhancer or single enhancer (Uncomment only one code block corresponding to the Enhancer-Marker combination) 
+    - Lines 125-167: Detect cells marked by enhancer2 in case of double enhancer (Uncomment only one code block corresponding to the Enhancer-Marker combination)
+    - Lines 170-242: Detect cells marked by marker (Uncomment only one code block corresponding to the Enhancer-Marker combination)
+    - Lines 244-298: Detect cells marked by DAPI (Uncomment only one code block corresponding to the Enhancer-Marker combination)\
 
 ### [calc_spec_sens_Samik.m](https://github.com/MitraLab-Organization/Sensitivity-and-Specificity-Calculation/blob/main/calc_spec_sens_Samik.m)
     - Prerequisite: Run ug3_enhcSpecTest_Samik_New.m to get Detection CSVs
