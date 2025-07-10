@@ -19,6 +19,7 @@ Calculation of Sensitivity and Specificity for Enhancer-based images
     - Lines 49-52: Uncomment for Double Enhancer only
     - Lines 123-125, 137, 141, 146, 150: Uncommnet for single enhancer (Comment Lines 127-136, 139-140, 144-145, 148-149)
     - Lines 127-136, 139-140, 144-145, 148-149: Uncommnet for double enhancer (Comment Lines 123-125, 137, 141, 146, 150)
+    - Certain special heuristic pre-processing parameters are mentioned in the comment for some images; uncomment accordingly
 
 ### [ug3_enhcSpecTest_Samik_New.m](https://github.com/MitraLab-Organization/Sensitivity-and-Specificity-Calculation/blob/main/ug3_enhcSpecTest_Samik_New.m)
     - Detection of Cells marked across each Channel by Morphological techniques
@@ -29,7 +30,7 @@ Calculation of Sensitivity and Specificity for Enhancer-based images
     - Lines 125-167: Detect cells marked by enhancer2 in case of double enhancer (Uncomment only one code block corresponding to the Enhancer-Marker combination)
     - Lines 170-242: Detect cells marked by marker (Uncomment only one code block corresponding to the Enhancer-Marker combination)
     - Lines 244-298: Detect cells marked by DAPI (Uncomment only one code block corresponding to the Enhancer-Marker combination)
-    - Certain special heuristic parameters are mentioned in the comment for some image, umcomment accordingly
+    - Certain special heuristic morphological parameters are mentioned in the comment for some images; uncomment accordingly
 
 ### [calc_spec_sens_Samik.m](https://github.com/MitraLab-Organization/Sensitivity-and-Specificity-Calculation/blob/main/calc_spec_sens_Samik.m)
     - Prerequisite: Run ug3_enhcSpecTest_Samik_New.m to get Detection CSVs
